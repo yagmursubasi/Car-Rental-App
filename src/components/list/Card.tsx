@@ -18,7 +18,7 @@ const Card: FC<Props> = ({ car }) => {
     <motion.div
       initial={{ scale: 0.5, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
-      className="car-card group"
+      className="car-card group relative "
     >
       {/* araba ismi  */}
       <h1 className="car-card-content-title">
@@ -35,19 +35,21 @@ const Card: FC<Props> = ({ car }) => {
         <img
           src={generateImage(car)}
           alt={car.model}
-          className="w-full h-full object-contain min-h-[200px] "
+          width={400}
+          height={300}
+          className="w-full h-full object-contain"
         />
       </div>
 
       {/* araba özellikleri */}
-      <div className="w-full">
-        <div className="group-hover:hidden">
+      <div className="w-full relative mt-4">
+        <div className="group-hover:opacity-0 transition-opacity duration-300">
           <Info car={car} />
         </div>
         <motion.div
           initial={{ scale: 0.5 }}
           whileInView={{ scale: 1 }}
-          className="hidden group-hover:block"
+          className="absolute bottom-0 left-0 w-full hidden group-hover:flex z-10"
         >
           <Button
             text="Daha Fazla"

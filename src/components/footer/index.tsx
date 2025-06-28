@@ -9,7 +9,7 @@ import {
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-[#1f242b] border-t border-gray-700 text-white py-10 mt-16">
+    <footer className="min-h-[300px] bg-[#1f242b] border-t border-gray-700 text-white py-10 mt-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo ve açıklama */}
         <div className="col-span-1 md:col-span-2">
@@ -26,16 +26,16 @@ const Footer: FC = () => {
           {/* Sosyal Medya */}
           <div className="flex gap-4 mt-4 text-xl">
             <a href="#" aria-label="Facebook" className="hover:text-blue-500">
-              <FaFacebookF />
+              <FaFacebookF size={20} />
             </a>
             <a href="#" aria-label="Instagram" className="hover:text-pink-500">
-              <FaInstagram />
+              <FaInstagram size={20} />
             </a>
             <a href="#" aria-label="Twitter" className="hover:text-sky-400">
-              <FaTwitter />
+              <FaTwitter size={20} />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:text-blue-300">
-              <FaLinkedinIn />
+              <FaLinkedinIn size={20} />
             </a>
           </div>
         </div>
