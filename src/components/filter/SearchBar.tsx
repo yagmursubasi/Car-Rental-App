@@ -51,12 +51,13 @@ const SearchBar: FC = () => {
       </div>
 
       <div className="searchbar-item flex flex-col !items-start ">
-        <label>Model</label>
+        <label htmlFor="model">Model</label>
         <div className="flex w-full">
           <div className="absolute ml-3 mt-1 ">
             <img src="model-icon.png" alt="Model Icon" className="w-[25px]" />
           </div>
           <input
+            id="model"
             type="text"
             className="searchbar-input rounded text-black bg-white pl-10"
             placeholder="Modeli Giriniz"
@@ -67,8 +68,9 @@ const SearchBar: FC = () => {
       </div>
 
       <div className="searchbar-item flex flex-col">
-        <label>Yıl</label>
+        <label htmlFor="year">Yıl</label>
         <input
+          id="year"
           type="number"
           className="w-[120px] py-[6px] px-2 text-center rounded shadow text-black bg-white"
           placeholder="Yıl giriniz"
@@ -78,10 +80,11 @@ const SearchBar: FC = () => {
       </div>
 
       <button
+        area-label="Ara"
         type="submit"
         className="flex items-center gap-2 mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow transition-all duration-200"
       >
-        <img src="/search.svg" alt="Ara" className="w-5 h-5" />
+        <img src="/search.svg" alt="Search" className="w-5 h-5" />
         Ara
       </button>
     </form>

@@ -21,6 +21,7 @@ const Hero: FC = () => {
           transition={{ duration: 0.7, type: "spring" }}
           src="/hero.png"
           className="object-contain"
+          alt="Araba fotoğrafı"
         />
       </div>
     </div>

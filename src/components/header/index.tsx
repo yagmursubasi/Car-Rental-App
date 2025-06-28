@@ -5,7 +5,7 @@ import Button from "../button";
 const Header: FC = () => {
   return (
     <header className="w-full z-10">
-      <div className="max-width flex justify-between items-center px-6 py-4 ">
+      <div className="max-width flex justify-between items-center padding-x py-4 ">
         <Link to="/">
           <h1 className="text-3xl font-bold text-white">
             <span className="text-blue-400">Auto</span>Way
