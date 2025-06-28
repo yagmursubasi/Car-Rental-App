@@ -38,6 +38,7 @@ const Card: FC<Props> = ({ car }) => {
           width={400}
           height={300}
           className="w-full h-full object-contain"
+          loading="lazy"
         />
       </div>
 
