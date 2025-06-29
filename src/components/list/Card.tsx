@@ -20,7 +20,7 @@ const Card: FC<Props> = ({ car }) => {
       whileInView={{ scale: 1, opacity: 1 }}
       className="car-card group relative "
     >
-      {/* araba ismi  */}
+      {/* araba ismii  */}
       <h1 className="car-card-content-title">
         {car.make} {car.model}
       </h1>
